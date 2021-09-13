@@ -1,0 +1,55 @@
+{
+   "type": "ETA",
+   "version": "1.0",
+   "generated_timestamp ": "2021-09-12T21:07:18+08:00",
+   "data": [
+       {
+           "co": "CTB",
+           "route": "E23",
+           "dir": "I",
+           "seq": 2,
+           "stop": "001845",
+           "dest_tc": "慈雲山 (南)",
+           "dest_en": "Tsz Wan Shan (South)",
+           "eta": "2021-09-12T21:08:26+08:00",
+           "rmk_tc": "",
+           "eta_seq": 1,
+           "dest_sc": "慈云山 (南)",
+           "rmk_en": "",
+           "rmk_sc": "",
+           "data_timestamp": "2021-09-12T21:07:10+08:00"
+       },
+       {
+           "co": "CTB",
+           "route": "E23",
+           "dir": "I",
+           "seq": 2,
+           "stop": "001845",
+           "dest_tc": "慈雲山 (南)",
+           "dest_en": "Tsz Wan Shan (South)",
+           "eta": "2021-09-12T21:33:58+08:00",
+           "rmk_tc": "",
+           "eta_seq": 2,
+           "dest_sc": "慈云山 (南)",
+           "rmk_en": "",
+           "rmk_sc": "",
+           "data_timestamp": "2021-09-12T21:07:10+08:00"
+       },
+       {
+           "co": "CTB",
+           "route": "E23",
+           "dir": "I",
+           "seq": 2,
+           "stop": "001845",
+           "dest_tc": "慈雲山 (南)",
+           "dest_en": "Tsz Wan Shan (South)",
+           "eta": "2021-09-12T22:04:00+08:00",
+           "rmk_tc": "",
+           "eta_seq": 3,
+           "dest_sc": "慈云山 (南)",
+           "rmk_en": "",
+           "rmk_sc": "",
+           "data_timestamp": "2021-09-12T21:07:10+08:00"
+       }
+   ]
+}

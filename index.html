@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- iOS PWA metadata -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Cathay City ETA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="icon-512.png">
+    
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Iconify font icon -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <title>Estimated time of arrival</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">ETA To / From Cathay City</a>
+        <button id="refresh-btn" type="button" class="navbar-toggler" onclick="reloadETA()">
+            <span>&#x21bb;</span>
+        </button>
+        </div>
+    </nav>
+    <div class="container" id="display">
+        <ul class="nav nav-tabs" id="etaTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-one" data-bs-toggle="tab" data-bs-target="#tab-one-content" type="button" role="tab" aria-controls="tab-one-content" aria-selected="true" onclick="changeActiveTab('tab-one-content')">Tung Chung</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-two" data-bs-toggle="tab" data-bs-target="#tab-two-content" type="button" role="tab" aria-controls="tab-two-content" aria-selected="false" onclick="changeActiveTab('tab-two-content')">HK Island</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-three" data-bs-toggle="tab" data-bs-target="#tab-three-content" type="button" role="tab" aria-controls="tab-three-content" aria-selected="false" onclick="changeActiveTab('tab-three-content')">Jordan</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="tabContent">
+            <div class="tab-pane fade show active" id="tab-one-content" role="tabpanel" aria-labelledby="home-tab">
+            </div>
+            <div class="tab-pane fade" id="tab-two-content" role="tabpanel" aria-labelledby="tab-two">...</div>
+            <div class="tab-pane fade" id="tab-three-content" role="tabpanel" aria-labelledby="tab-three">...</div>
+        </div>
+
+
+        <!-- PWA popup-->
+        <div id="popup" class="fixed-bottom alert alert-primary mb-0" hidden>
+            <button style="position: absolute; top: 2px; right: 2px;" type="button" class="btn-close" aria-label="Close" onclick="closePopup();"></button>
+            <h5 class="alert-heading">Add Cathy City ETA to Home Screen</h5>
+            <p>
+                Tap <span class="iconify" data-icon="gridicons-share-ios"></span> and select "Add to Home Screen"
+            </p>
+            <div class="text-center">&#9660;</div>
+        </div>
+    </div>
+
+
+
+<script src="eta.js"></script>
+
+<!-- Boostrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
